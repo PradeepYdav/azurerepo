@@ -48,10 +48,21 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Destination",
+						"value": "dbo.usersdata"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "MySqlSource",
+						"additionalColumns": [
+							{
+								"name": "",
+								"value": ""
+							}
+						],
 						"query": "select * from usersdata"
 					},
 					"sink": {
